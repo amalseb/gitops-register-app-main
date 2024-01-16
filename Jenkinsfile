@@ -1,5 +1,5 @@
 pipeline {
-    agent  { label "Jenkins Agent"}
+    agent  { label "Jenkins-Agent"}
     environment {
         APP_NAME = "register-app-pipeline"
     }
@@ -24,7 +24,7 @@ pipeline {
                 """
             }
         }
-        stage("Push the changed deployemnt file to Git") {
+        stage("Push the changed deployment file to Git") {
             steps {
                 sh """
                     git config -- global user.name "amalseb"
